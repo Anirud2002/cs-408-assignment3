@@ -1,4 +1,114 @@
-h1{
-  border-color: #d3e644;
-  border-style: dashed;
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(123, 123, 123);
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.common-background {
+    background: rgb(104, 214, 100);
+}
+
+.common-highlighted-background {
+    background: rgb(12, 230, 19);
+    box-shadow: 2px 0px 5px rgb(92, 230, 68);
+}
+
+h1,h2 {
+    font-family: "Rubik Bubbles", system-ui;
+    font-style: normal;
+}
+
+/* HEADER STYLES */
+
+header {
+    padding: 10px 0px;
+}
+
+.title-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+}
+
+.title-logo h1 {
+    text-shadow: 2px 3px 5px rgb(87, 86, 86);
+}
+
+
+.title-logo > img {
+    width: 60px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 20px auto 0px auto;
+    padding: 10px;
+}
+
+header ul > li {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+header ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+/* MAIN CONTENT STYLES */
+
+.main-content {
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.main-content h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.left-side {
+    flex: 2;
+    margin-right: 10px;
+    padding: 20px 10px;
+}
+
+.left-side p {
+    margin-top: 20px;
+}
+
+.right-side {
+    flex: 1;
+}
+
+.right-side img {
+    width: 120px;
+}
+
+.img-row {
+    display: flex;
+    justify-content: center;
+}
+
+/* FOOTER STYLES */
+
+footer {
+    margin-top: 10px;
+    padding: 20px 10px;
 }
